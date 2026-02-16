@@ -39,18 +39,18 @@ def certifica_login(pagina,automacao,local,link):
 
 # ==================================
 def logs_ativos(mensagem):
-    url  = 'https://script.google.com/macros/s/AKfycbxXjnUYBI1Uw4S2H9C0UDL8I95Oh9YV1KnOfmr0bgu7OaZ_OZMj5hxE_avtEYCG9_UZnw/exec'
+    url  = ''
     requests.post(url, json={"log_ativos.txt":mensagem})
     
 
 def logs_dash(mensagem):
-    url  = 'https://script.google.com/macros/s/AKfycbxXjnUYBI1Uw4S2H9C0UDL8I95Oh9YV1KnOfmr0bgu7OaZ_OZMj5hxE_avtEYCG9_UZnw/exec'
+    url  = ''
     requests.post(url, json={"log_dash.txt":mensagem})
     
 
 
 def logs_inspecao(mensagem):
-    url  = 'https://script.google.com/macros/s/AKfycbyIeB7JmTITA92lYqDAkWGII44D8CSo2MqCp-7tqFZfl2b6NwEtHFZ2wPembtgaECs2Aw/exec'
+    url  = ''
     resposta = requests.post(url, json={"ativo":[mensagem]})
 
 
